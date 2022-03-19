@@ -11,7 +11,7 @@ const App :React.FC = ()=>{
 
   const handleSubmit = ():void=>{
     if(name === "" ||  email === "" || content === ""){
-      alert("All fields are requiered!")
+      alert("All fields are required!")
       return;
     }
     setPersonalInfos([...personalInfos,{name:name,email:email,content:content}])

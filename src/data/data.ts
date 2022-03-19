@@ -1,6 +1,6 @@
 import { PersonalInfo } from "../models/PersonalInfo";
 
 export const personaldata:PersonalInfo[] = [
-    {name:"sina",email:"sina@gmail.com",content:"dadada"},
-    {name:"onat",email:"onat@gmail.com",content:"kgfdjkdfgdkg"}
+    {name:"a",email:"a@gmail.com",content:"dadada"},
+    {name:"ot",email:"t@gmail.com",content:"kgfdjkdfgdkg"}
 ]

@@ -13,12 +13,13 @@ const Table : React.FC<Props> = ({personalInfos,setPersonalInfos}) => {
     const [currentInfos,setCurrentInfos] = useState<PersonalInfo[]>(personalInfos)
 
     useEffect(()=>{
+        setMaxPage(Math.floor(personalInfos.length/5))
         const newinfos = personalInfos.slice(currentPage*5,currentPage*5+5);
         setCurrentInfos(newinfos);
-    },[currentPage])
+    },[personalInfos])
 
     console.log(currentInfos);
-
+    console.log(maxPage);
     const removeEntry = (name:string):void =>{
         personalInfos = personalInfos.filter((info:PersonalInfo)=>{
             return info.name !== name
@@ -74,7 +75,7 @@ const Table : React.FC<Props> = ({personalInfos,setPersonalInfos}) => {
                 </tr>
             </thead>
             <tbody>
-                {personalInfos.map((info:PersonalInfo,index:number)=>{
+                {currentInfos.map((info:PersonalInfo,index:number)=>{
                     return(
                         <tr>
                             <th scope='row'>{index+1}</th>

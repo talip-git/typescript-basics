@@ -1,0 +1,31 @@
+.table-div{
+    color:white;
+    margin-top: 3rem;
+}
+.table-div table{
+    color: white;
+}
+tbody tr{
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+    padding: 1rem;
+}
+tbody tr:hover:nth-child(n+1){
+    background-color: rgb(123, 131, 255);
+}
+.order-by{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: space-around;
+}
+.pageination{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.fa-solid{
+    font-size:smaller;
+}
